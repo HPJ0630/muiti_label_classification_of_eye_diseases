@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1772</width>
+    <height>1221</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>幼圆</family>
+    <pointsize>1</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>1280</width>
+     <height>770</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:-0.5, y1:0.5, x2:1, y2:0, stop:0 rgba(100, 146, 230, 250), stop:1 rgba(220, 220, 223, 255));
+border-radius: 15px;</string>
+   </property>
+   <widget class="QWidget" name="titlebar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+    border: 2px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #f0f0f0; /* 背景色，可根据需要调整 */
+}
+</string>
+    </property>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>-12</y>
+       <width>151</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="ui/ui.qrc">:/logo/touming_logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mininum_button">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>0</y>
+       <width>75</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #f0f0f0; /* 背景色，可根据需要调整 */
+	image: url(:/logo/minimize.png);
+}
+QPushButton:hover {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+QPushButton:pressed {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="close_button">
+     <property name="geometry">
+      <rect>
+       <x>1206</x>
+       <y>0</y>
+       <width>75</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 2px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #f0f0f0; /* 背景色，可根据需要调整 */
+	image: url(:/logo/close.png);
+}
+QPushButton:hover {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>0</y>
+       <width>571</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: #4a556f; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>基于眼底医学影像的眼科疾病智能诊断系统</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>518</y>
+      <width>391</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+	background-color: rgb(135, 151, 255);
+    background: transparent;  /* 透明背景 */
+    border: 2px solid #53a0ff;  /* 2px 宽的白色边框 */
+    border-radius: 8px;  /* 圆角边框，可根据需要调整 */
+}
+</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>30</y>
+       <width>130</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 0px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #90aaff; /* 背景色，可根据需要调整 */
+}
+QPushButton:hover {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+QPushButton:pressed {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始检测</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>130</y>
+       <width>130</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 0px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #90aaff; /* 背景色，可根据需要调整 */
+}
+QPushButton:hover {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+QPushButton:pressed {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>保存结果</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>30</y>
+       <width>130</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 0px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #90aaff; /* 背景色，可根据需要调整 */
+}
+QPushButton:hover {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+QPushButton:pressed {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>批量检测</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>130</y>
+       <width>130</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 0px solid white; /* 整体边框白色 */
+    border-radius: 10px; /* 设置倒角的半径 */
+    background-color: #90aaff; /* 背景色，可根据需要调整 */
+}
+QPushButton:hover {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+QPushButton:pressed {
+    background-color: #FFC0CB;  /* 鼠标悬停颜色 */
+    border: 2px solid #FFC0CB;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>关于系统</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>78</y>
+      <width>391</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+	background-color: rgb(135, 151, 255);
+    background: transparent;  /* 透明背景 */
+    border: 2px solid #53a0ff;  /* 2px 宽的白色边框 */
+    border-radius: 8px;  /* 圆角边框，可根据需要调整 */
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>45</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗，可选 */
+    border: none;  /* 无边框 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>系统日志</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>45</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗，可选 */
+    border: none;  /* 无边框 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>当前设备：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time_label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>45</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗，可选 */
+    border: none;  /* 无边框 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>当前时间</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>45</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="ui/ui.qrc">:/logo/clock.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>77</y>
+      <width>500</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	background-color: rgb(135, 151, 255);
+    background: transparent;  /* 透明背景 */
+    border: 2px solid #b2cdff;  /* 2px 宽的白色边框 */
+    border-radius: 8px;  /* 圆角边框，可根据需要调整 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>368</y>
+      <width>501</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	background-color: rgb(135, 151, 255);
+	color: #54ad39;
+    background: transparent;  /* 透明背景 */
+    border: 2px solid #b2cdff;  /* 2px 宽的白色边框 */
+    border-radius: 8px;  /* 圆角边框，可根据需要调整 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>333</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗，可选 */
+    border: none;  /* 无边框 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>诊断结果</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>45</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗，可选 */
+    border: none;  /* 无边框 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>双目图像</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>77</y>
+      <width>321</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+	background-color: rgb(135, 151, 255);
+    background: transparent;  /* 透明背景 */
+    border: 2px solid #ffffff;  /* 2px 宽的白色边框 */
+    border-radius: 8px;  /* 圆角边框，可根据需要调整 */
+}
+</string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>45</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 0px solid white; /* 整体边框白色 */
+    border-radius: 0px; /* 设置倒角的半径 */
+    background-color: #f0f0f0; /* 背景色，可根据需要调整 */
+	image: url(:/logo/image.png);
+}
+QPushButton:hover {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+QPushButton:pressed {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>155</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border: 0px solid white; /* 整体边框白色 */
+    border-radius: 0px; /* 设置倒角的半径 */
+    background-color: #f0f0f0; /* 背景色，可根据需要调整 */
+	image: url(:/logo/image.png);
+}
+QPushButton:hover {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+QPushButton:pressed {
+    background-color: #969696;  /* 鼠标悬停颜色 */
+    border: 2px solid #7f7f7f;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>52</x>
+       <y>40</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗（可选） */
+    border: none;  /* 取消默认边框 */
+    border-bottom: 2px solid black;  /* 黑色底部边框 */
+    border-top: 2px solid rgba(255, 255, 255, 150);  /* 半透明白色顶部边框 */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>path to the left eye image</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>52</x>
+       <y>150</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background: transparent;  /* 透明背景 */
+    color: black;  /* 黑色字体 */
+    font-size: 16px;  /* 字体大小 */
+    font-weight: bold;  /* 字体加粗（可选） */
+    border: none;  /* 取消默认边框 */
+    border-bottom: 2px solid black;  /* 黑色底部边框 */
+    border-top: 2px solid rgba(255, 255, 255, 150);  /* 半透明白色顶部边框 */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>path to the right eye image</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="eye_image">
+    <property name="geometry">
+     <rect>
+      <x>69</x>
+      <y>339</y>
+      <width>251</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="ui/ui.qrc">:/logo/eye.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>54</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>祝</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>389</y>
+      <width>54</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>您</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>466</y>
+      <width>54</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>康</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>428</y>
+      <width>54</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: transparent; /* 透明背景 */
+    color: black; /* 黑色文本 */
+    border: none; /* 无边框 */
+    padding: 0px; /* 无额外内边距 */
+    font: inherit; /* 继承父级字体 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>健</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>831</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: transparent; /* 透明背景 */
+    gridline-color: white; /* 网格线颜色 */
+    border: 1px solid white; /* 添加白色边框 */
+}
+
+QTableWidget::item {
+    color: black; /* 文字颜色 */
+    text-align: center; /* 居中对齐 */
+}
+
+QHeaderView::section {
+    background-color: transparent; /* 透明表头 */
+    border: none; /* 去掉边框 */
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: transparent; /* 透明左上角 */
+    border: none;
+}
+</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="rowCount">
+     <number>6</number>
+    </property>
+    <property name="columnCount">
+     <number>5</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>40</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <item row="0" column="0">
+     <property name="text">
+      <string>序号</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="250">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>时间</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>左眼路径</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>右眼路径</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>检测结果</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>56</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+	background-color: rgb(135, 151, 255);
+    background: transparent;  /* 透明背景 */
+    border: 0px solid #53a0ff;  /* 2px 宽的白色边框 */
+    border-radius: 8px;  /* 圆角边框，可根据需要调整 */
+}
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ui/ui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

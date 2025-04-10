@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>close.png</file>
+    <file>minimize.png</file>
+    <file>file.png</file>
+    <file>image.png</file>
+    <file>eye.png</file>
+    <file>touming_logo.png</file>
+    <file>eye.png</file>
+    <file>clock.png</file>
+    <file>touming_logo.png</file>
+  </qresource>
+</RCC>
